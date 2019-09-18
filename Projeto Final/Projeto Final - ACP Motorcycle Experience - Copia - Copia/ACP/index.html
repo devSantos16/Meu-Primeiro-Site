@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title> ACP - Motorcyle Experience</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="ACP- Motorcycle Experience. Reparação depeças de Motocicletas nacionais e importadas">
+  <meta name="author" content="Emanuel dos Santos Paz">
+  <meta name="keywords" content="Bootstrap, Frameworks, CSS3, JS, Classes, Front-end">
+  <!--Meta para ler as medias queries: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Link do icone-->
+  <link rel="shortcut icon" href="images/icon.jpg">
+  <!--Incorporando CSS bootstrap:-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--Linkando o nosso CSS:-->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script>
+    jQuery(document).ready(function($) {
+      			$(".scroll").click(function(event){
+      				event.preventDefault();
+      				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+      		   });
+      		});
+  </script>
+</head>
+
+<body id="topo">
+  <!-- Menu e barra de Menu pra Android e outros componentes -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html" class="text-uppercase d-flex scroll"> <span class="glyphicon glyphicon-home"> </span> Home </a>
+            </li>
+            <li>
+              <a href="#empresa" class="text-uppercase scroll"><span class="glyphicon glyphicon-briefcase"></span> Empresa </a>
+            </li>
+            <li>
+              <a href="#galeria" class="text-uppercase scroll"><span class="glyphicon glyphicon-picture"></span> Galeria </a>
+            </li>
+            <li>
+              <a href="#contato" class="text-uppercase scroll"><span class="glyphicon glyphicon-picture"></span> Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim do Menu -->
+    <!-- Criando o carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="img-responsive" src="images/slide01.jpg" alt="Primeiro Slide">
+          <!-- <div class="carousel-caption" id="s1"> Acp Motos tem cujo objetivo a manutenção de motos e outros </div> -->
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="images/slide02.jpg" alt="Segundo Slide">
+          <!-- <div class="carousel-caption" id="s2"> Ver mais </div> -->
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="images/slide03.jpg" alt="Terceiro Slide">
+          <!-- <div class="carousel-caption" id="s3"> Ver mais </div> -->
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    </div>
+  </header>
+  <!-- /.carousel -->
+  <!-- Texto com nome da Empresa e suas propriedades -->
+  <section class="container-fluid">
+    <div class="chamada">
+      <h1 class="text-center"> ACP - Motorcyle Experience </h1>
+      <h2 class="text-center"> <span>Reparação  de peças de </span> Motocicletas <span>nacionais e importada.</span> </h2>
+      <img class="img-responsive" src="images/imagemChamada.jpg" alt="Imagem da Chamada">
+      <br>
+      <hr>
+      <div id="empresa">
+        <div id="caixa01" class="col-sm-6  text-center">
+          <img class="img-responsive" src="images/iconeFerramenta.png" alt="Imagem Ferramenta">
+          <h2> Empresa </h2>
+          <p class="text-center"> Fundada em 15/01/2001 a ACP MOTORCYCLE EXPERIENCE nasceu como uma empresa de chapeação e pintura em peças e assessórios de motocicletas. Tendo como objetivo inicial a reparação de toda a gama de peças de motocicletas nacionais e importadas multimarcas.
+          </p>
+        </div>
+        <div id="caixa02" class="col-sm-6  text-center">
+          <img class="img-responsive" src="images/iconeAprovacao.png" alt="Imagem Aprovação ">
+          <h2> Estrutura </h2>
+          <p class="text-center"> Porte (produção) atualmente disponibilizamos de uma área de 600 metros quadrados cobertos para as atividades da empresa. Distribuídos entre recepção, administrativo, pátio 1 e 2 para motos aguardando vistorias ou em reparos, oficina com dependências:
+            laboratório de cores, estoque de peças, cabines de pintura 1 e 2, estufa de secagem, sala de reparação e soldas, salas de lixamento, mecânica , sala de polimento e lavagem. </p>
+        </div>
+      </div>
+      <div id="imagemCentral">
+        <img class="img-responsive" src="images/imgPrincipal.jpg" alt="Imagem dentro da Empresa"> </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <!-- Fim da Sessão de Introdução -->
+  <!-- Explicação da Empresa Ex: Como Funciona, O que faz a Empresa entre outros -->
+  <section class="introducao">
+    <div class="col-sm-12  text-center">
+      <div id="imgFuncionario">
+        <img class="img-responsive" src="images/iconeFuncionario.png" alt="Imagem Funcionário "> </div>
+      <h2 class="empresa"> Proposta de Trabalho </h2>
+      <p class="text-center">Atender a demanda de sinistos envolvendo motos, na região de Porto Alegre e Região metropolitana como parceiro referenciado, de forma ágil com fornecimento de peças, e alto padrão de mão de obra especializada em troca de peças e reparação,pois nossa
+        diferenciação de mercado esta no preparo e expertise no que diz respeito a este mercado, possuímos a estrutura necessária para atendimento estadia e reparação do veículo, com valor de mão de obra padrão da CIA. </p>
+      <div id="funcionario">
+        <img class="img-responsive" src="images/imagemFuncionario.jpg" alt="Funcionário da Empresa"> </div>
+      <br>
+      <hr> </div>
+  </section>
+  <!-- Fim da Sessão -->
+  <!-- Colunas de propriedades da Empresa -->
+  <section class="colunas">
+    <div class="col-sm-4  text-center">
+      <img class="img-responsive" src="images/icone1.jpg" alt="Imagem 1">
+      <h2> Pintura </h2>
+      <p class="text-center"> O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais
+        adequado ao seu documento. </p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <img class="img-responsive" src="images/icone2.png" alt="Imagem 2">
+      <h2> Reparação </h2>
+      <p class="text-center"> O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais
+        adequado ao seu documento. </p>
+    </div>
+    <div class="col-sm-4  text-center">
+      <img src="images/icone3.png" class="img-responsive" alt="Imagem 3">
+      <h2> Customização</h2>
+      <p class="text-center"> O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais
+        adequado ao seu documento. </p>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <!-- Sessão de Galerias -->
+  <section>
+    <div class="py-5 text-center bg-secondary container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria01.jpg" alt="Galeria 1"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria02.jpg" alt="Galeria 2"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria03.jpg" alt="Galeria 3"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria04.jpg" alt="Galeria 4"> </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria05.jpg" alt="Galeria 5"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria06.jpg" alt="Galeria 6"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria07.jpg" alt="Galeria 7 "> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-fluid" src="images/galeria08.jpg" alt="Galeria 8"> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Termina sessão -->
+  <br>
+  <hr>
+
+  <section>
+    <div id="fornecedor">
+    <img class="img-responsive" src = "images/iconeFornecedor.png" alt = "Icone do Fornecedor">
+    <h2> Fornecedores </h2>
+    </div>
+    <div class="py-5 text-center bg-secondary container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-responsive" src="images/fornecedor01.jpg" alt="Fornecedor  01"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-responsive" src="images/fornecedor02.jpg" alt="Fornecedor 02"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-responsive" src="images/fornecedor03.jpg" alt="Fornecedor 03"> </a>
+          </div>
+          <div class="col-md-3 col-6 p-1">
+            <a href="#">
+              <img class="d-block img-responsive" src="images/fornecedor04.jpg" alt="Fornecedor 04"> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center text-center p-4"> <i class="d-block  fa fa-5x fa-font-awesome"></i> </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="p-4 col-md-4">
+          <h2 id = "textoRedeSocial" class="mb-4 text-secondary"> Redes Sociais </h2>
+
+          <div id="redesSociais">
+            <img src="images/facebook.png" alt="Link do Facebook">
+            <img src="images/insta.png" alt="Link do Linkedin">
+          </div>
+        </div>
+        <div class="p-4 col-md-4">
+          <h2 id="textoParceiros" class="mb-4 text-secondary"> Parceiros </h2>
+          <div id="parceiros">
+            <img src="images/portoSeguro.png" alt="Link do Porto Seguro">
+            <img src="images/itau.png" alt="Link do Itau seguros">
+            <img src ="images/mapfre.png" alt = "Link do Mapfre Seguros">
+            <img src ="images/bancoDoBrasil.jpg" alt = "Link do Banco do Brasil">
+          </div>
+        </div>
+        <div class="p-4 col-md-4">
+          <h2 id= "textoContato" class="mb-4">Contato</h2>
+
+          <p>(51) 3442-0170</p>
+          <p>acppmotorcycleexperience@hotmail.com</p>
+          <p>Porto Alegre - Mario Totta - 468 (RS)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-white">© Copyright 2018 ACP Motorcyle Experience - Todos os direitos Reservados. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim sessão de Colunas-->
+
+</body>
+
+</html>
